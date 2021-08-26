@@ -19,7 +19,7 @@ public class HelloWorld {
 			System.out.println(format3.format(date));
 		}
 		else {
-			System.out.println("NONE");
+			System.out.println(format2.format(date));
 		}
 		}
 //		String id = args[0];
