@@ -1,7 +1,7 @@
 class Accounting {
 	public double valueOfSupply;//공급가액
 	public static double vatRate=0.1;//부가가치세율
-	public Accounting(double valueOfSupply){
+	public Accounting(double valueOfSupply){ //생성자
 			this.valueOfSupply = valueOfSupply;
 	}
 		
