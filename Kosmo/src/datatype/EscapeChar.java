@@ -77,33 +77,7 @@ public class EscapeChar {
 			System.out.printf("%s%5d%4d%5d%6d%7.2f%n",na1[b],ko[b],en[b],ma[b],tot1,av1);
 			b++;
 		}
-		
-		
-//		boolean run =true;
-//		int speed =0;
-//		int key =0;
-//		while(run) {
-//			if(key !=13 && key!=10) { // 13->\r의 아스키코드 값 10 -> \n  아스키코드값 :엔터키는 \r\n
-//				System.out.println("-------------------");
-//				System.out.println("1.증속 : 2.감속 : 3.중지");
-//				System.out.println("------------------");
-//				System.out.print("선택");
-//			}
-//			key = System.in.read();
-//			
-//			if(key == 49) {
-//				speed++;
-//				System.out.println("현재속도 = "+speed);
-//			}else if(key ==50) {
-//				speed--;
-//				System.out.println("현재속도 = "+speed);
-//			}
-//			else if(key == 51) {
-//				run=false;
-//			}
-//			}
-//		System.out.println("프로그램 종료");
-		}
+	}
 }
 
 
