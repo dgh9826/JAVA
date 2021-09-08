@@ -27,7 +27,7 @@ public class StaticMethod {
 		t1.a();
 		t1.b();
 		//class 호출은 method에 static이 필요하다 
-		Print.c(""); // -> static -> class method
+		Print.c("====="); // -> static -> class method
 		//..................
 //		Print.a("*");
 //		Print.b("*");

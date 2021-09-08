@@ -19,30 +19,66 @@ public class ModifiersMethod {
 
 	public static void main(String[] args) {
 		Greeting.hi();
-		//===문항 16===
-		String course[]= {"Java","C++","HTML5","컴퓨터구조","안드로이드"};
-		int score[] = {95,88,76,62,55};
+		int sum=0;
+		for(int i=0;i<=100;i++) {
+			sum+=i;
+		}
+		System.out.println(sum);
+		
+		//===문항 17===
+		String str[] = {"가위","바위","보"};
 		Scanner sc = new Scanner(System.in);
-		boolean run = true;
-		int i=0;
-		while (run) {
-			System.out.print("과목 이름 >> ");
-			String study = sc.next();
-			for(i=0;i<course.length;i++) {
-				if(course[i].equals(study)) {
-					System.out.println(course[i]+"의 점수는 "+score[i]);
-					break;
-				}
+		System.out.println("컴퓨터와 가위 바위 보 게임을 합니다.");
+		boolean run=true;
+		while(run){
+			int n = (int)(Math.random()*3);
+			System.out.print("가위 바위 보! >> ");
+			String user = sc.next();
+			if(str[n].equals(user)) {
+				System.out.println("사용자 = "+user+", 컴퓨터="+str[n]+" 비겼습니다.");
+			}else if(user.equals("바위")) {
+				System.out.println(str[n]==str[0]?"사용자 = "+user+" 컴퓨터 = "+str[n]+" 사용자가 이겼습니다."
+						:"사용자 = "+user+" 컴퓨터 = "+str[n]+" 사용자가 졌습니다.");
 			}
-			if (study.equals("그만")){
-				System.out.println("종료");
-				run = false;
-				break;
+			else if(user.equals("가위")) {
+				System.out.println(str[n]==str[2]?"사용자 = "+user+" 컴퓨터 = "+str[n]+" 사용자가 이겼습니다."
+						:"사용자 = "+user+" 컴퓨터 = "+str[n]+" 사용자가 졌습니다.");
 			}
-			if(i==course.length) {
-				System.out.println("없는 과목입니다.");
+			else {
+				System.out.println(str[n]==str[1]?"사용자 = "+user+" 컴퓨터 = "+str[n]+" 사용자가 이겼습니다."
+						:"사용자 = "+user+" 컴퓨터 = "+str[n]+" 사용자가 졌습니다.");
+			}
+			if(user.equals("그만")){
+				System.out.println("게임을 종료합니다...");
+				run=false;
+				
 			}
 		}
+		
+		//===문항 16===
+//		String course[]= {"Java","C++","HTML5","컴퓨터구조","안드로이드"};
+//		int score[] = {95,88,76,62,55};
+//		Scanner sc = new Scanner(System.in);
+//		boolean run = true;
+//		int i=0;
+//		while (run) {
+//			System.out.print("과목 이름 >> ");
+//			String study = sc.next();
+//			for(i=0;i<course.length;i++) {
+//				if(course[i].equals(study)) {
+//					System.out.println(course[i]+"의 점수는 "+score[i]);
+//					break;
+//				}
+//			}
+//			if (study.equals("그만")){
+//				System.out.println("종료");
+//				run = false;
+//				break;
+//			}
+//			if(i==course.length) {
+//				System.out.println("없는 과목입니다.");
+//			}
+//		}
 		
 		
 		//===문항 15===
@@ -104,14 +140,14 @@ public class ModifiersMethod {
 //				max=array[i];
 //		}
 //		System.out.println(max);
-		
+//		==문항 4==
 //		for(int i =0;i<4;i++) {
 //			for(int j=0;j<=i;j++) {
 //				System.out.print("*");
 //			}
 //			System.out.println();
 //		}
-		
+//		==문항 5==
 //		int [] sco = {1,2,3,4,5,6,7,8,9,10};
 //		int sum = 0;
 //		for(int i=0;i<sco.length;i++) {
